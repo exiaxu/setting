@@ -36,6 +36,7 @@ Plugin 'nvie/vim-flake8'
 " Plugin 'Valloric/YouCompleteMe'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'majutsushi/tagbar'
+" Plugin 'ryanoasis/vim-devicons'
 call vundle#end()
 filetype plugin indent on
 
@@ -57,7 +58,7 @@ set fileencodings=utf-8,gb2312,cp936,latin-1
 set fileencoding=utf-8
 set termencoding=utf-8
 set fileformat=unix
-set encoding=utf-8
+set encoding=UTF-8
 set background=dark
 
 let g:airline_powerline_fots = 1
@@ -75,7 +76,7 @@ let NERDTreeWinPos="left"
 let NERDTreeShowHidden=1
 let NERDTreeMinimalUI=1
 let NERDTreeAutoDeleteBuffer=1
-let NERDTreeIgnore=['\~$', '\.pyc$', '\.swp$', '\.DS_Store']
+let NERDTreeIgnore=['\~$', '\.pyc$', '\.swp$', '\.DS_Store$']
 
 " comfortable motion
 let g:comfortable_motion_no_default_key_mappings = 1
