@@ -33,6 +33,7 @@ Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'Yggdroot/indentLine'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'nvie/vim-flake8'
+Plugin 'tell-k/vim-autopep8'
 " Plugin 'Valloric/YouCompleteMe'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'majutsushi/tagbar'
@@ -52,7 +53,8 @@ set smarttab
 set expandtab
 set autoindent
 set nowrap
-set textwidth=79
+set textwidth=120
+set cc=120
 " set scroll=10
 set fileencodings=utf-8,gb2312,cp936,latin-1
 set fileencoding=utf-8
@@ -119,6 +121,10 @@ au Syntax * RainbowParenthesesLoadBraces
 
 "nvie/vim-flake8 关于注释
 let g:NERDSpaceDelims = 1
+
+" python 代码规范化
+autocmd FileType python noremap <buffer> <F8> :call Autopep8()<CR>
+let g:autopep8_max_line_length=120
 
 " python 代码自动检查
 autocmd FileType python map <buffer> <F3> :call Flake8()<CR>
