@@ -54,7 +54,7 @@ set expandtab
 set autoindent
 set nowrap
 set textwidth=120
-set cc=120
+" set cc=120
 " set scroll=10
 set fileencodings=utf-8,gb2312,cp936,latin-1
 set fileencoding=utf-8
